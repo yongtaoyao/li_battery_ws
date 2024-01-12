@@ -1,0 +1,2 @@
+source;share/li_battery_diagnostic_module/environment/ament_prefix_path.sh
+source;share/li_battery_diagnostic_module/environment/path.sh

@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target li_battery_diagnostic_module[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/li_battery_diagnostic_module.dir/src/diagnostic_algorithm/battery_module.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/li_battery_diagnostic_module.dir/src/diagnostic_algorithm/cell_voltage_analysis.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/li_battery_diagnostic_module.dir/src/battery_diagnostic_core.cpp.o[0m
+[01m[K/root/li_battery_ws/src/Li_Battery_Diagnostic_Module/src/diagnostic_algorithm/cell_voltage_analysis.cpp:[m[K In member function ‘[01m[Kint CellVoltageAnalysis::identifyFaultyCell()[m[K’:
+[01m[K/root/li_battery_ws/src/Li_Battery_Diagnostic_Module/src/diagnostic_algorithm/cell_voltage_analysis.cpp:9:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass BatteryModule[m[K’ has no member named ‘[01m[Kcell_voltages[m[K’; did you mean ‘[01m[Kstd::vector<float> BatteryModule::cell_voltages_[m[K’? (not accessible from this context)
+    9 |     std::vector<float> cell_voltages = module_.[01;31m[Kcell_voltages[m[K;
+      |                                                [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/root/li_battery_ws/src/Li_Battery_Diagnostic_Module/include/battery_diagnostic/diagnostic_algorithm/cell_voltage_analysis.hpp:6[m[K,
+                 from [01m[K/root/li_battery_ws/src/Li_Battery_Diagnostic_Module/src/diagnostic_algorithm/cell_voltage_analysis.cpp:1[m[K:
+[01m[K/root/li_battery_ws/src/Li_Battery_Diagnostic_Module/include/battery_diagnostic/diagnostic_algorithm/battery_module.hpp:17:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+   17 |     std::vector<float> [01;36m[Kcell_voltages_[m[K;
+      |                        [01;36m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/li_battery_diagnostic_module.dir/build.make:90: CMakeFiles/li_battery_diagnostic_module.dir/src/diagnostic_algorithm/cell_voltage_analysis.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/li_battery_diagnostic_module.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

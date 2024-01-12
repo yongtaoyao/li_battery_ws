@@ -1,0 +1,14 @@
+[0.044s] Invoking command in '/root/li_battery_ws/build/li_battery_diagnostic_module': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/li_battery_ws/build/li_battery_diagnostic_module -- -j8 -l8
+[0.077s] [35m[1mConsolidate compiler generated dependencies of target li_battery_diagnostic_module[0m
+[0.092s] [ 16%] [32mBuilding CXX object CMakeFiles/li_battery_diagnostic_module.dir/src/diagnostic_algorithm/cell_voltage_analysis.cpp.o[0m
+[0.404s] [ 33%] [32m[1mLinking CXX shared library libli_battery_diagnostic_module.so[0m
+[0.729s] [ 66%] Built target li_battery_diagnostic_module
+[0.745s] [ 83%] [32mBuilding CXX object CMakeFiles/battery_diagnostic_node.dir/src/battery_diagnostic_core.cpp.o[0m
+[7.745s] [100%] [32m[1mLinking CXX executable battery_diagnostic_node[0m
+[8.042s] /usr/bin/ld: CMakeFiles/battery_diagnostic_node.dir/src/battery_diagnostic_core.cpp.o: in function `BatteryDiagnosticCore::batteryDataCallback(std::shared_ptr<sensor_msgs::msg::BatteryState_<std::allocator<void> > >)':
+[8.042s] battery_diagnostic_core.cpp:(.text+0x596): undefined reference to `CellVoltageAnalysis::CellVoltageAnalysis(BatteryModule const&)'
+[8.086s] collect2: error: ld returned 1 exit status
+[8.087s] gmake[2]: *** [CMakeFiles/battery_diagnostic_node.dir/build.make:176: battery_diagnostic_node] Error 1
+[8.087s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/battery_diagnostic_node.dir/all] Error 2
+[8.088s] gmake: *** [Makefile:146: all] Error 2
+[8.089s] Invoked command in '/root/li_battery_ws/build/li_battery_diagnostic_module' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/li_battery_ws/build/li_battery_diagnostic_module -- -j8 -l8

@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target li_battery_diagnostic_module[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/li_battery_diagnostic_module.dir/src/diagnostic_algorithm/cell_voltage_analysis.cpp.o[0m
+[ 33%] [32m[1mLinking CXX shared library libli_battery_diagnostic_module.so[0m
+[ 66%] Built target li_battery_diagnostic_module
+[ 83%] [32mBuilding CXX object CMakeFiles/battery_diagnostic_node.dir/src/battery_diagnostic_core.cpp.o[0m
+[100%] [32m[1mLinking CXX executable battery_diagnostic_node[0m

@@ -1,0 +1,102 @@
+[0.000000] (-) TimerEvent: {}
+[0.000099] (li_battery_diagnostic_module) JobQueued: {'identifier': 'li_battery_diagnostic_module', 'dependencies': OrderedDict()}
+[0.000447] (li_battery_diagnostic_module) JobStarted: {'identifier': 'li_battery_diagnostic_module'}
+[0.041455] (li_battery_diagnostic_module) JobProgress: {'identifier': 'li_battery_diagnostic_module', 'progress': 'cmake'}
+[0.041993] (li_battery_diagnostic_module) JobProgress: {'identifier': 'li_battery_diagnostic_module', 'progress': 'build'}
+[0.042543] (li_battery_diagnostic_module) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/li_battery_ws/build/li_battery_diagnostic_module', '--', '-j8', '-l8'], 'cwd': '/root/li_battery_ws/build/li_battery_diagnostic_module', 'env': OrderedDict([('USER', 'root'), ('SSH_CLIENT', '10.0.0.15 2961 22'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/root/li_battery_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/root/li_battery_ws/build/li_battery_diagnostic_module'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.0.15 2961 172.17.0.3 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.077578] (li_battery_diagnostic_module) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target li_battery_diagnostic_module\x1b[0m\n'}
+[0.092011] (li_battery_diagnostic_module) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/li_battery_diagnostic_module.dir/src/diagnostic_algorithm/cell_voltage_analysis.cpp.o\x1b[0m\n'}
+[0.099653] (-) TimerEvent: {}
+[0.199881] (-) TimerEvent: {}
+[0.300152] (-) TimerEvent: {}
+[0.400453] (-) TimerEvent: {}
+[0.403954] (li_battery_diagnostic_module) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX shared library libli_battery_diagnostic_module.so\x1b[0m\n'}
+[0.500578] (-) TimerEvent: {}
+[0.600867] (-) TimerEvent: {}
+[0.701140] (-) TimerEvent: {}
+[0.729774] (li_battery_diagnostic_module) StdoutLine: {'line': b'[ 66%] Built target li_battery_diagnostic_module\n'}
+[0.745017] (li_battery_diagnostic_module) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/battery_diagnostic_node.dir/src/battery_diagnostic_core.cpp.o\x1b[0m\n'}
+[0.801255] (-) TimerEvent: {}
+[0.901545] (-) TimerEvent: {}
+[1.001811] (-) TimerEvent: {}
+[1.102077] (-) TimerEvent: {}
+[1.202392] (-) TimerEvent: {}
+[1.302717] (-) TimerEvent: {}
+[1.402989] (-) TimerEvent: {}
+[1.503276] (-) TimerEvent: {}
+[1.603561] (-) TimerEvent: {}
+[1.703819] (-) TimerEvent: {}
+[1.804079] (-) TimerEvent: {}
+[1.904344] (-) TimerEvent: {}
+[2.004606] (-) TimerEvent: {}
+[2.104893] (-) TimerEvent: {}
+[2.205150] (-) TimerEvent: {}
+[2.305413] (-) TimerEvent: {}
+[2.405677] (-) TimerEvent: {}
+[2.505971] (-) TimerEvent: {}
+[2.606260] (-) TimerEvent: {}
+[2.706521] (-) TimerEvent: {}
+[2.806829] (-) TimerEvent: {}
+[2.907088] (-) TimerEvent: {}
+[3.007350] (-) TimerEvent: {}
+[3.107609] (-) TimerEvent: {}
+[3.207867] (-) TimerEvent: {}
+[3.308151] (-) TimerEvent: {}
+[3.408412] (-) TimerEvent: {}
+[3.508669] (-) TimerEvent: {}
+[3.608929] (-) TimerEvent: {}
+[3.709208] (-) TimerEvent: {}
+[3.809463] (-) TimerEvent: {}
+[3.909748] (-) TimerEvent: {}
+[4.010041] (-) TimerEvent: {}
+[4.110332] (-) TimerEvent: {}
+[4.210627] (-) TimerEvent: {}
+[4.310920] (-) TimerEvent: {}
+[4.411178] (-) TimerEvent: {}
+[4.511465] (-) TimerEvent: {}
+[4.611723] (-) TimerEvent: {}
+[4.711979] (-) TimerEvent: {}
+[4.812249] (-) TimerEvent: {}
+[4.912538] (-) TimerEvent: {}
+[5.012827] (-) TimerEvent: {}
+[5.113119] (-) TimerEvent: {}
+[5.213382] (-) TimerEvent: {}
+[5.313659] (-) TimerEvent: {}
+[5.413949] (-) TimerEvent: {}
+[5.514211] (-) TimerEvent: {}
+[5.614464] (-) TimerEvent: {}
+[5.714718] (-) TimerEvent: {}
+[5.814993] (-) TimerEvent: {}
+[5.915256] (-) TimerEvent: {}
+[6.015518] (-) TimerEvent: {}
+[6.115780] (-) TimerEvent: {}
+[6.216041] (-) TimerEvent: {}
+[6.316331] (-) TimerEvent: {}
+[6.416591] (-) TimerEvent: {}
+[6.516884] (-) TimerEvent: {}
+[6.617117] (-) TimerEvent: {}
+[6.717408] (-) TimerEvent: {}
+[6.817672] (-) TimerEvent: {}
+[6.917991] (-) TimerEvent: {}
+[7.018251] (-) TimerEvent: {}
+[7.118516] (-) TimerEvent: {}
+[7.218780] (-) TimerEvent: {}
+[7.319050] (-) TimerEvent: {}
+[7.419314] (-) TimerEvent: {}
+[7.519620] (-) TimerEvent: {}
+[7.619909] (-) TimerEvent: {}
+[7.720175] (-) TimerEvent: {}
+[7.745595] (li_battery_diagnostic_module) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable battery_diagnostic_node\x1b[0m\n'}
+[7.820294] (-) TimerEvent: {}
+[7.920579] (-) TimerEvent: {}
+[8.020846] (-) TimerEvent: {}
+[8.042663] (li_battery_diagnostic_module) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/battery_diagnostic_node.dir/src/battery_diagnostic_core.cpp.o: in function `BatteryDiagnosticCore::batteryDataCallback(std::shared_ptr<sensor_msgs::msg::BatteryState_<std::allocator<void> > >)':\n"}
+[8.042829] (li_battery_diagnostic_module) StderrLine: {'line': b"battery_diagnostic_core.cpp:(.text+0x596): undefined reference to `CellVoltageAnalysis::CellVoltageAnalysis(BatteryModule const&)'\n"}
+[8.086542] (li_battery_diagnostic_module) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[8.087559] (li_battery_diagnostic_module) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/battery_diagnostic_node.dir/build.make:176: battery_diagnostic_node] Error 1\n'}
+[8.087765] (li_battery_diagnostic_module) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/battery_diagnostic_node.dir/all] Error 2\n'}
+[8.088017] (li_battery_diagnostic_module) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.089349] (li_battery_diagnostic_module) CommandEnded: {'returncode': 2}
+[8.120942] (-) TimerEvent: {}
+[8.157625] (li_battery_diagnostic_module) JobEnded: {'identifier': 'li_battery_diagnostic_module', 'rc': 2}
+[8.168108] (-) EventReactorShutdown: {}

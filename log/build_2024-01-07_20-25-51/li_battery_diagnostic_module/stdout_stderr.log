@@ -1,0 +1,67 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/li_battery_ws/build/li_battery_diagnostic_module
+[ 16%] [32mBuilding CXX object CMakeFiles/li_battery_diagnostic_module.dir/src/diagnostic_algorithm/battery_module.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/li_battery_diagnostic_module.dir/src/diagnostic_algorithm/cell_voltage_analysis.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/li_battery_diagnostic_module.dir/src/battery_diagnostic_core.cpp.o[0m
+In file included from [01m[K/root/li_battery_ws/src/Li_Battery_Diagnostic_Module/src/battery_diagnostic_core.cpp:1[m[K:
+[01m[K/root/li_battery_ws/src/Li_Battery_Diagnostic_Module/include/battery_diagnostic/battery_diagnostic_core.hpp:4:10:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: No such file or directory
+    4 | #include [01;31m[K<ros/ros.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/li_battery_diagnostic_module.dir/build.make:104: CMakeFiles/li_battery_diagnostic_module.dir/src/battery_diagnostic_core.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/root/li_battery_ws/src/Li_Battery_Diagnostic_Module/src/diagnostic_algorithm/cell_voltage_analysis.cpp:[m[K In member function ‘[01m[Kint CellVoltageAnalysis::identifyFaultyCell()[m[K’:
+[01m[K/root/li_battery_ws/src/Li_Battery_Diagnostic_Module/src/diagnostic_algorithm/cell_voltage_analysis.cpp:7:78:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+    7 |     std::vector<float> cell_voltages = /*...get voltages from the module...*/[01;31m[K;[m[K
+      |                                                                              [01;31m[K^[m[K
+[01m[K/root/li_battery_ws/src/Li_Battery_Diagnostic_Module/src/diagnostic_algorithm/battery_module.cpp:[m[K In member function ‘[01m[Kfloat BatteryModule::calculateVoltageRange() const[m[K’:
+[01m[K/root/li_battery_ws/src/Li_Battery_Diagnostic_Module/src/diagnostic_algorithm/battery_module.cpp:7:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_element[m[K’ was not declared in this scope
+    7 |     float max_voltage = *[01;31m[Kmax_element[m[K(cell_voltages_.begin(), cell_voltages_.end());
+      |                          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/li_battery_ws/src/Li_Battery_Diagnostic_Module/src/diagnostic_algorithm/cell_voltage_analysis.cpp:14:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kabs[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   14 |         float deviation = std::[01;31m[Kabs[m[K(cell_voltages[i] - average_voltage);
+      |                                [01;31m[K^~~[m[K
+[01m[K/root/li_battery_ws/src/Li_Battery_Diagnostic_Module/src/diagnostic_algorithm/battery_module.cpp:8:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_element[m[K’ was not declared in this scope
+    8 |     float min_voltage = *[01;31m[Kmin_element[m[K(cell_voltages_.begin(), cell_voltages_.end());
+      |                          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/root/li_battery_ws/src/Li_Battery_Diagnostic_Module/src/diagnostic_algorithm/battery_module.cpp:[m[K In member function ‘[01m[Kfloat BatteryModule::calculateAverageVoltage() const[m[K’:
+[01m[K/root/li_battery_ws/src/Li_Battery_Diagnostic_Module/src/diagnostic_algorithm/battery_module.cpp:14:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kaccumulate[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   14 |     float sum = std::[01;31m[Kaccumulate[m[K(cell_voltages_.begin(), cell_voltages_.end(), 0.0f);
+      |                      [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/li_battery_diagnostic_module.dir/build.make:90: CMakeFiles/li_battery_diagnostic_module.dir/src/diagnostic_algorithm/cell_voltage_analysis.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/li_battery_diagnostic_module.dir/build.make:76: CMakeFiles/li_battery_diagnostic_module.dir/src/diagnostic_algorithm/battery_module.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/li_battery_diagnostic_module.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
