@@ -49,7 +49,7 @@ To convert your CSV data to a ROS bag, use the provided Python script:
 **Run the CSV to ROS bag conversion script**:
 
     ```bash
-    python3 csv_to_rosbag.py
+    python csv_to_rosbag.py
     ```
 
     This script reads data from a specified CSV file, converts each row to a `BatteryState` ROS message, and writes those messages to a ROS bag file.
@@ -61,7 +61,7 @@ Now that you have your data in a rosbag file, you can use ros2 bag play to publi
 1. **Publish the data**:
 
     ```bash
-    ros2 bag play output_rosbag.bag
+    ros2 bag play battery_data_1.bag
     ```
 You can also manually publish a message to `/battery_data_topic`.
 
