@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>li_battery_diagnostic_module</name>
+  <version>0.0.1</version>
+  <description>Python-based Li Battery Diagnostic Module for ROS 2.</description>
+  <maintainer email="yongtaoyao001@gmail.com">Yongtao</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

@@ -1,0 +1,5 @@
+li_battery_diagnostic_module:
+  ros__parameters:
+    cell_count: 96
+    module_size: 8
+    voltage_threshold: 0.05  # Example parameter, adjust based on your requirements
