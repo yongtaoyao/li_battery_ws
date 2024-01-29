@@ -48,9 +48,9 @@ To convert your CSV data to a ROS bag, use the provided Python script:
 
 **Run the CSV to ROS bag conversion script**:
 
-    ```bash
+```bash
     python csv_to_rosbag.py
-    ```
+```
 
 This script reads data from a specified CSV file, converts each row to a `BatteryState` ROS message, and writes those messages to a ROS bag file.
 
@@ -77,9 +77,9 @@ After publish the data, you can listen for results on `/diagnostic_result_topic`
 
 **Listen for diagnostic results**:
 
-    ```bash
+```bash
     ros2 topic echo /diagnostic_result_topic
-    ```
+```
 
 You should see the diagnostic results being published by your `li_battery_diagnostic_module` node.
 
@@ -89,9 +89,9 @@ You can record the data being published to the `/battery_data_topic`:
 
 **Record the data**:
 
-    ```bash
+```bash
     ros2 bag record /battery_data_topic
-    ```
+```
 
 Use this command while your node is publishing the battery data to record the messages.
 
