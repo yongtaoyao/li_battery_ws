@@ -8,21 +8,21 @@ To build the module, follow these steps:
 
 1. **Navigate to your ROS 2 workspace**:
 
-    ```bash
+```bash
     cd ~/li_battery_ws
-    ```
+```
 
 2. **Build the workspace**:
 
-    ```bash
+```bash
     colcon build --symlink-install
-    ```
+```
 
 3. **Source the setup file**:
 
-    ```bash
+```bash
     source install/setup.bash
-    ```
+```
 
 ## Running the Module
 
@@ -30,17 +30,17 @@ After building the module, you can run it as follows:
 
 1. **Launch the module**:
 
-    ```bash
+```bash
     ros2 launch li_battery_diagnostic_module battery_diagnostic.launch.xml
-    ```
+```
 
 2. **Check the Active Topics**:
 
     To see if your topics (`/battery_data_topic` and `/diagnostic_result_topic`) are active, you can use:
 
-    ```bash
+```bash
     ros2 topic list
-    ```
+```
 
 ## Converting CSV Data to ROS Bag
 
@@ -60,16 +60,16 @@ Now that you have your data in a rosbag file, you can use ros2 bag play to publi
 
 1. **Publish the data**:
 
-    ```bash
+```bash
     ros2 bag play battery_data_1.bag
-    ```
+```
 You can also manually publish a message to `/battery_data_topic`.
 
 2. **Publish a test message**:
 
-    ```bash
+```bash
     ros2 topic pub /battery_data_topic sensor_msgs/msg/BatteryState "{current: 12.5, cell_voltage: [4.1, 4.2, ...]}"
-    ```
+```
 
 ## Testing the Module
 
