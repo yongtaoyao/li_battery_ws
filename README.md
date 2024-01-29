@@ -52,7 +52,7 @@ To convert your CSV data to a ROS bag, use the provided Python script:
     python csv_to_rosbag.py
     ```
 
-    This script reads data from a specified CSV file, converts each row to a `BatteryState` ROS message, and writes those messages to a ROS bag file.
+This script reads data from a specified CSV file, converts each row to a `BatteryState` ROS message, and writes those messages to a ROS bag file.
 
 ## Play the Rosbag to Publish the Data
 
@@ -93,7 +93,7 @@ You can record the data being published to the `/battery_data_topic`:
     ros2 bag record /battery_data_topic
     ```
 
-    Use this command while your node is publishing the battery data to record the messages.
+Use this command while your node is publishing the battery data to record the messages.
 
 ---
 
