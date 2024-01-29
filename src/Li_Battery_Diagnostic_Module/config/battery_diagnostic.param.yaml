@@ -1,5 +1,0 @@
-battery_diagnostic_node:
-  ros__parameters:
-    cell_count: 96
-    module_size: 8
-    voltage_threshold: 0.05  # adjust based on real diagnostic criteria

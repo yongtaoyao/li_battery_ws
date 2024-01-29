@@ -1,9 +1,0 @@
-<launch>
-  <node pkg="li_battery_diagnostic_module" 
-        exec="battery_diagnostic_node" 
-        name="battery_diagnostic_node" 
-        output="screen">
-    <param from="$(find-pkg-share li_battery_diagnostic_module)/config/battery_diagnostic.param.yaml"/>
-  </node>
-</launch>
-

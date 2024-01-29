@@ -1,4 +1,0 @@
-source;share/li_battery_diagnostic_module/local_setup.bash
-source;share/li_battery_diagnostic_module/local_setup.dsv
-source;share/li_battery_diagnostic_module/local_setup.sh
-source;share/li_battery_diagnostic_module/local_setup.zsh

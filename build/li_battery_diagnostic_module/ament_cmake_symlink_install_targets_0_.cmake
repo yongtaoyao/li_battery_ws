@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/root/li_battery_ws/build/li_battery_diagnostic_module/battery_diagnostic_node" "TARGETS" "battery_diagnostic_node" "DESTINATION" "lib/li_battery_diagnostic_module")
