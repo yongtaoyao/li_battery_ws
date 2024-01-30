@@ -2,17 +2,17 @@ rosbag2_bagfile_information:
   version: 5
   storage_identifier: sqlite3
   duration:
-    nanoseconds: 99
+    nanoseconds: 9998
   starting_time:
     nanoseconds_since_epoch: 1
-  message_count: 100
+  message_count: 9999
   topics_with_message_count:
     - topic_metadata:
         name: /battery_data_topic
         type: sensor_msgs/msg/BatteryState
         serialization_format: cdr
         offered_qos_profiles: ""
-      message_count: 100
+      message_count: 9999
   compression_format: ""
   compression_mode: ""
   relative_file_paths:
@@ -22,5 +22,5 @@ rosbag2_bagfile_information:
       starting_time:
         nanoseconds_since_epoch: 1
       duration:
-        nanoseconds: 99
-      message_count: 100
+        nanoseconds: 9998
+      message_count: 9999

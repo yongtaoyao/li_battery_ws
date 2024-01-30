@@ -1,8 +1,28 @@
-<launch>
+<!-- <launch>
   <node pkg="li_battery_diagnostic_module" 
         exec="battery_diagnostic_node" 
         name="battery_diagnostic_node" 
         output="screen">
+    <param from="$(find-pkg-share li_battery_diagnostic_module)/config/battery_diagnostic.param.yaml"/>
+  </node>
+</launch> -->
+
+
+<launch>
+  <!-- Node for battery_diagnostic_node -->
+  <node pkg="li_battery_diagnostic_module" 
+        exec="battery_diagnostic_node" 
+        name="battery_diagnostic_node" 
+        output="screen">
+    <param from="$(find-pkg-share li_battery_diagnostic_module)/config/battery_diagnostic.param.yaml"/>
+  </node>
+
+  <!-- Node for advanced_battery_diagnostic_node -->
+  <node pkg="li_battery_diagnostic_module" 
+        exec="advanced_battery_diagnostic_node" 
+        name="advanced_battery_diagnostic_node" 
+        output="screen">
+    <!-- Specify any parameters if needed -->
     <param from="$(find-pkg-share li_battery_diagnostic_module)/config/battery_diagnostic.param.yaml"/>
   </node>
 </launch>
