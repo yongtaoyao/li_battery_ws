@@ -4,15 +4,11 @@ The Li Battery Diagnostic Module is a cutting-edge solution engineered for the p
 
 ## Module Overview
 
-<p align="center">
-  <img src="workflow.png" alt="workflow" width="40%"/>
-</p>
-
 Leveraging an enhanced diagnostic algorithm, the Advanced Li Battery Diagnostic Module meticulously evaluates the health status of individual cells within a battery pack. It accepts input data that includes the overall current of the battery pack and the voltage levels of each of the 96 cells. By employing sophisticated feature extraction techniques and machine learning algorithms, the module offers a comprehensive assessment to pinpoint any cells that are malfunctioning.
 
 ## Enhanced Diagnostic Process
 
-Unlike the previous version, which partitioned cells into modules and compared voltage ranges, the advanced module adopts a more nuanced approach to diagnostics. It incorporates a sequence of operations to analyze the battery data over time, utilizing a set of 100 consecutive data samples to perform its analysis.
+The module adopts a more nuanced approach to diagnostics. It incorporates a sequence of operations to analyze the battery data over time, utilizing a set of 100 consecutive data samples to perform its analysis.
 
 ### Key Features:
 
@@ -21,6 +17,9 @@ Unlike the previous version, which partitioned cells into modules and compared v
 - **Machine Learning Analysis**: Applies a machine learning model, such as SVM or k-means clustering, to the extracted features to discern patterns or anomalies indicative of cell faults.
 
 ### Algorithm Workflow:
+<p align="center">
+  <img src="workflow.png" alt="workflow" width="40%"/>
+</p>
 
 - **Input Data Collection**: Gathers the current of the battery pack and the voltage of each cell (96 cells in total).
   
